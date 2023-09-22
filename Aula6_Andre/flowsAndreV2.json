@@ -1,0 +1,422 @@
+[
+    {
+        "id": "c77a18c48edbc323",
+        "type": "tab",
+        "label": "Flow Andre",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "df852c1af84cd2e6",
+        "type": "http in",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "url": "/GETAndreVeras",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "09ca03f0f6396777"
+            ]
+        ]
+    },
+    {
+        "id": "3469da7bbd1aa567",
+        "type": "http response",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "72c4b376168388f3",
+        "type": "debug",
+        "z": "c77a18c48edbc323",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "09ca03f0f6396777",
+        "type": "cloudantplus out",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "cloudant": "b2951d6249908fc1",
+        "database": "andreverasdb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "3469da7bbd1aa567",
+                "72c4b376168388f3"
+            ]
+        ]
+    },
+    {
+        "id": "8688aa068723ea1f",
+        "type": "http in",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "url": "/POSTARRAYAndreVeras",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "5cc36df35e59e003"
+            ]
+        ]
+    },
+    {
+        "id": "cb345f90b3d63b56",
+        "type": "http response",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 790,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8a769816f7577848",
+        "type": "debug",
+        "z": "c77a18c48edbc323",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d0755f3c63207efe",
+        "type": "cloudantplus out",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "cloudant": "b2951d6249908fc1",
+        "database": "andreverasdb4",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "cb345f90b3d63b56",
+                "8a769816f7577848"
+            ]
+        ]
+    },
+    {
+        "id": "a57b57b295373217",
+        "type": "http in",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "url": "/PUTAndreVeras",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 420,
+        "wires": [
+            [
+                "53372d5408347b0c"
+            ]
+        ]
+    },
+    {
+        "id": "3a3ec3e9c9edb6c8",
+        "type": "http response",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4ae2067f4ce188d4",
+        "type": "debug",
+        "z": "c77a18c48edbc323",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "53372d5408347b0c",
+        "type": "cloudantplus out",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "cloudant": "b2951d6249908fc1",
+        "database": "andreverasdb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 340,
+        "y": 420,
+        "wires": [
+            [
+                "3a3ec3e9c9edb6c8",
+                "4ae2067f4ce188d4"
+            ]
+        ]
+    },
+    {
+        "id": "e27ccffacd9b27d9",
+        "type": "http in",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "url": "/READAndreVeras",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 540,
+        "wires": [
+            [
+                "a385e090869c1b15"
+            ]
+        ]
+    },
+    {
+        "id": "8cdcb3fb9a2a162b",
+        "type": "http response",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "351c9a73c80f9139",
+        "type": "debug",
+        "z": "c77a18c48edbc323",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a385e090869c1b15",
+        "type": "cloudantplus in",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "cloudant": "4bef60ee4816ae41",
+        "database": "andreverasdb4",
+        "service": "_ext_",
+        "search": "_all_",
+        "design": "",
+        "index": "",
+        "x": 340,
+        "y": 540,
+        "wires": [
+            [
+                "8cdcb3fb9a2a162b",
+                "351c9a73c80f9139"
+            ]
+        ]
+    },
+    {
+        "id": "a78db2ac0e0472ea",
+        "type": "http in",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "url": "/DELETEAndreVeras",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 660,
+        "wires": [
+            [
+                "e2f40386c835b7ae"
+            ]
+        ]
+    },
+    {
+        "id": "bca7a28795d1f0f4",
+        "type": "http response",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "ff99e34ec758d3a0",
+        "type": "debug",
+        "z": "c77a18c48edbc323",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "e2f40386c835b7ae",
+        "type": "cloudantplus out",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "cloudant": "b2951d6249908fc1",
+        "database": "andreverasdb2",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "delete",
+        "x": 360,
+        "y": 660,
+        "wires": [
+            [
+                "bca7a28795d1f0f4",
+                "ff99e34ec758d3a0"
+            ]
+        ]
+    },
+    {
+        "id": "5cc36df35e59e003",
+        "type": "split",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 350,
+        "y": 260,
+        "wires": [
+            [
+                "d0755f3c63207efe"
+            ]
+        ]
+    },
+    {
+        "id": "fcb14db5eba5e930",
+        "type": "http in",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "url": "/POSTAndreVeras",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 840,
+        "wires": [
+            [
+                "b9b1617dca27896d"
+            ]
+        ]
+    },
+    {
+        "id": "fc8c9015e46e54b5",
+        "type": "http response",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 790,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "14dd73ac6b07aa78",
+        "type": "debug",
+        "z": "c77a18c48edbc323",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "b9b1617dca27896d",
+        "type": "cloudantplus out",
+        "z": "c77a18c48edbc323",
+        "name": "",
+        "cloudant": "b2951d6249908fc1",
+        "database": "andreverasdb",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 520,
+        "y": 840,
+        "wires": [
+            [
+                "fc8c9015e46e54b5",
+                "14dd73ac6b07aa78"
+            ]
+        ]
+    },
+    {
+        "id": "b2951d6249908fc1",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-1sf2n1o95m2vpr2jfg0nc12cqd076yoyoopnhgjzuh5o:a7b29644e36c2dd9ed66686c4203c23b@8472bb0f-4f34-4675-bd25-3cf7a52343d1-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "",
+        "useapikey": true
+    },
+    {
+        "id": "4bef60ee4816ae41",
+        "type": "cloudantplus",
+        "host": "https://apikey-v2-1sf2n1o95m2vpr2jfg0nc12cqd076yoyoopnhgjzuh5o:a7b29644e36c2dd9ed66686c4203c23b@8472bb0f-4f34-4675-bd25-3cf7a52343d1-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "AlexandreRossini",
+        "useapikey": true
+    }
+]
